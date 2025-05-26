@@ -8,7 +8,7 @@ import {
   formatConfidence,
   getPriorityColor,
   apiService,
-  type XrayAnalysis,
+  // type XrayAnalysis,
   type SimilarCase,
   type DiagnosisItem,
   type RecommendationItem,
