@@ -7,11 +7,12 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "serve -s dist"
   },
   "dependencies": {
     "framer-motion": "^12.12.2",
-    "html2canvas": "^1.4.1",
+    "html2canvas": "^1. Kirkland Signature Organic Virgin Coconut Oil, 84 fl oz4.1",
     "jspdf": "^3.0.1",
     "react": "^19.1.0",
     "react-compare-image": "^3.5.4",
