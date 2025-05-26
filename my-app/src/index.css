@@ -1,0 +1,9 @@
+:root {
+    --primary-accent: #00C2D1;
+    --secondary-accent: #CE67D3;
+  }
+  
+  .dark {
+    --primary-accent: #00FFF7;
+    --secondary-accent: #CE67D3;
+  }

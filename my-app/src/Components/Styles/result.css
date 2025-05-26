@@ -1,0 +1,579 @@
+/* Основные стили */
+.backGround {
+  background-color: #0C0F3A;
+}
+
+.results-page {
+  min-height: 100vh;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  color: #00FFF7;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.back-button:hover {
+  color: #CE67D3;
+}
+
+.back-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  margin-right: 0.5rem;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .results-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.image-section,
+.diagnosis-section {
+  background-color: #1A0033;
+  border: 1px solid rgba(0, 194, 209, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00FFF7;
+  margin-bottom: 1rem;
+}
+
+.xray-image {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.diagnosis-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #00FFF7, #CE67D3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.diagnosis-card,
+.recommendations-card {
+  background-color: rgba(12, 15, 58, 0.8);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #00FFF7;
+  margin-bottom: 0.75rem;
+}
+
+.diagnosis-list,
+.recommendations-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.diagnosis-item,
+.recommendation-item {
+  display: flex;
+  align-items: flex-start;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.5rem;
+}
+
+.bullet {
+  color: #00C2D1;
+  margin-right: 0.5rem;
+}
+
+.bullet.pink {
+  color: #CE67D3;
+}
+
+/* Patient Header Styles */
+.patient-header {
+  background: rgba(12, 15, 58, 0.8);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 194, 209, 0.3);
+}
+
+.patient-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.patient-info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  color: #00C2D1;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.info-value {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Похожие случаи */
+.similar-cases {
+  margin-bottom: 3rem;
+}
+
+.similar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00FFF7;
+  margin-bottom: 1.5rem;
+}
+
+.cases-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.case-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #1A0033;
+  border: 1px solid rgba(0, 194, 209, 0.2);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.case-image-container {
+  width: 30%;
+  min-height: 150px;
+  background-color: #2D3748;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.case-details {
+  width: 70%;
+  padding: 1rem;
+}
+
+.case-diagnosis {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #00C2D1;
+  margin-bottom: 0.5rem;
+}
+
+.case-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.match-container {
+  width: 100%;
+}
+
+.match-bar {
+  height: 6px;
+  background: linear-gradient(90deg, #00C2D1, #CE67D3);
+  border-radius: 3px;
+  margin-bottom: 0.25rem;
+}
+
+.match-percent {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Кнопки действий */
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  min-width: 120px;
+}
+
+.save-button {
+  background: linear-gradient(90deg, #00C2D1, #00a5b5);
+  color: white;
+}
+
+.share-button {
+  background: linear-gradient(90deg, #CE67D3, #b359b8);
+  color: white;
+}
+
+.print-button {
+  background: transparent;
+  color: #00FFF7;
+  border: 1px solid #00FFF7;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 194, 209, 0.3);
+}
+
+.button-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Детальный анализ */
+.detailed-analysis-section {
+  margin-top: 1.5rem;
+}
+
+.detailed-analysis-button {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, #00C2D1, #CE67D3);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.detailed-analysis-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 194, 209, 0.3);
+}
+
+.detailed-analysis-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Модальное окно детального анализа */
+.detailed-analysis-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.detailed-analysis-modal {
+  background-color: #1A0033;
+  border: 1px solid rgba(0, 194, 209, 0.3);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.close-detailed-modal {
+  background: none;
+  border: none;
+  color: #00FFF7;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.close-detailed-modal:hover {
+  background-color: rgba(0, 255, 247, 0.1);
+}
+
+.detailed-analysis-content {
+  margin-bottom: 1.5rem;
+}
+
+.detailed-analysis-content p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-detailed-button {
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  color: #00FFF7;
+  border: 1px solid #00FFF7;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.close-detailed-button:hover {
+  background-color: rgba(0, 255, 247, 0.1);
+}
+
+/* Confidence и Priority badges */
+.confidence-indicator {
+  margin-bottom: 1rem;
+}
+
+.confidence-badge {
+  background-color: rgba(0, 194, 209, 0.2);
+  color: #00C2D1;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+.priority-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+.priority-high {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.priority-medium {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+}
+
+.priority-low {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .action-button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .case-card {
+    flex-direction: column;
+  }
+
+  .case-image-container {
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .case-details {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .detailed-analysis-modal {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+/* Модальное окно */
+.share-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.share-modal {
+  background-color: #1A0033;
+  border: 1px solid rgba(0, 194, 209, 0.3);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00FFF7;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.modal-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.share-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.share-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: transform 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.share-option:hover {
+  transform: translateY(-3px);
+}
+
+.telegram {
+  background-color: #0088CC;
+  color: white;
+}
+
+.copy-link {
+  background-color: #00C2D1;
+  color: #0C0F3A;
+}
+
+.share-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.close-modal {
+  width: 100%;
+  padding: 0.75rem;
+  background: transparent;
+  color: #00FFF7;
+  border: 1px solid #00FFF7;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.close-modal:hover {
+  background-color: rgba(0, 255, 247, 0.1);
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .results-page,
+  .results-page * {
+    visibility: visible;
+  }
+  .results-page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: white;
+    color: black;
+  }
+  .action-buttons {
+    display: none !important;
+  }
+}
+
+
+
+/* Печать */
